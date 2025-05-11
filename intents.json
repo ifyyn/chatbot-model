@@ -1,0 +1,291 @@
+{
+ "intents": [
+    {
+      "tag": "selamat_datang",
+      "patterns": [
+        "selamat datang",
+        "halo",
+        "hai",
+        "apa kabar",
+        "hello"
+      ],
+      "responses": [
+        {
+          "text": "Selamat datang di goJerowaru! Kami siap membantu Anda menjelajahi keindahan wisata di Kecamatan Jerowaru. Apa yang bisa saya bantu hari ini?",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gojerowaru_Welcome.jpg"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pengenalan_diri",
+      "patterns": [
+        "siapa kamu",
+        "kenalan",
+        "apa kamu bisa bantu",
+        "ceritakan tentang kamu"
+      ],
+      "responses": [
+        {
+          "text": "Halo! Saya adalah chatbot yang siap memberikan informasi seputar wisata di Kecamatan Jerowaru. Saya di sini untuk membantu Anda menemukan tempat wisata terbaik, memberikan informasi rute, dan menjawab pertanyaan lain yang Anda miliki. Ayo, jelajahi Jerowaru bersama saya!"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sampai_jumpa",
+      "patterns": [
+        "sampai jumpa",
+        "terima kasih",
+        "selamat tinggal",
+        "dadah",
+        "see you"
+      ],
+      "responses": [
+        {
+          "text": "Terima kasih telah menggunakan goJerowaru! Sampai jumpa lagi dan semoga perjalanan Anda menyenankan. Jangan ragu untuk kembali kapan saja!"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_wisata",
+      "patterns": [
+        "apa itu goJerowaru",
+        "apa yang ada di goJerowaru",
+        "apa saja yang ada di goJerowaru",
+        "apa yang bisa saya lakukan di goJerowaru"
+      ],
+      "responses": [
+        {
+          "text": "goJerowaru adalah platform yang menyediakan informasi lengkap tentang tempat wisata, kuliner, dan aktivitas menarik di Kecamatan Jerowaru. Anda dapat menemukan berbagai destinasi wisata, mulai dari pantai, bukit, hingga tempat bersejarah."
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai",
+      "patterns": [
+        "pantai di jerowaru",
+        "pantai",
+        "rekomendasi pantai",
+        "rekomendasi pantai di jerowaru",
+        "rekomendasi wisata pantai",
+        "rekomendasi wisata pantai di jerowaru",
+        "apa itu pantai",
+        "apa yang ada di pantai",
+        "apa saja yang ada di pantai",
+        "daftar pantai yang ada di jerowaru",
+        "pantai apa saja yang bagus di jerowaru",
+        "jenis pantai di jerowaru",
+        "pantai terbaik di jerowaru",
+        "jelaskan tentang pantai di jerowaru",
+        "wisata pantai jerowaru",
+        "saya ingin tahu tentang pantai di jerowaru"
+      ],
+      "responses": [
+        {
+          "text": "Di Jerowaru, terdapat banyak pantai indah dan unik yang bisa kamu kunjungi. Beberapa di antaranya adalah:\n \n 1. Pantai Pink \n 2. Pantai Tanjung Ringgit \n 3. Pantai Penyisok\n 4. Pantai Ekas \n 5. Pantai Kura-Kura / Pantai Sungkun \n 6. Pantai Kaliantan \n 7. Pantai Cemara \n 8. Balai Mangrove Jerowaru \n \n Setiap pantai menawarkan pemandangan alam yang khas dan pengalaman wisata yang menarik."
+        },
+        {
+          "text": "Jerowaru adalah surga tersembunyi di Lombok Timur dengan banyak destinasi pantai menarik. Pantai Pink terkenal dengan pasir berwarna merah muda, sementara Tanjung Ringgit menyajikan tebing laut yang eksotis. Ada juga Pantai Penyisok yang masih alami, serta Pantai Ekas yang cocok untuk berselancar."
+        },
+        {
+          "text": "Beberapa pantai populer di Jerowaru antara lain:\n\nPantai Pink: unik dengan pasir berwarna merah muda,\nPantai Tanjung Ringgit: terkenal dengan tebing dan pemandangan laut luas.,\nPantai Penyisok: cocok untuk pecinta keheningan., \n antai Ekas: populer untuk surfing., \n Pantai Kura-Kura / Sungkun: eksotis dan alami., \n Pantai Kaliantan dan Pantai Cemara: cocok untuk bersantai., \n Balai Mangrove**: wisata edukatif dengan pemandangan hutan mangrove."
+        }
+      ],
+      "context": [""]
+    },    
+    {
+      "tag": "informasi_pantai_jerowaru",
+      "patterns": [
+        "pantai jerowaru",
+        "apa itu pantai jerowaru",
+        "apa yang ada di pantai jerowaru",
+        "apa saja yang ada di pantai jerowaru"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Jerowaru adalah salah satu pantai terkenal di Kecamatan Jerowaru. Pantai ini menawarkan pemandangan yang indah dan suasana yang tenang, cocok untuk bersantai dan menikmati keindahan alam.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gojerowaru_Welcome.jpg"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_pink",
+      "patterns": [
+        "pantai pink",
+        "pantai pink jerowaru",
+        "pantai pink lombok",
+        "pantai pink lombok timur",
+        "pantai pink lombok timur jerowaru",
+        "pasilitas pantai pink",
+        "apa itu pantai pink",
+        "apa yang ada di pantai pink",
+        "apa saja yang ada di pantai pink"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Pink adalah salah satu pantai terkenal di Jerowaru. Pantai ini memiliki pasir berwarna pink yang unik dan pemandangan yang menakjubkan. Anda dapat menikmati keindahan alam sambil bersantai di tepi pantai.",
+          "image": "https://www.rayadventure.com/wp-content/uploads/2018/08/pantai-pink-645x400.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Gazebo untuk bersantai",
+            "Spot snorkeling dan diving"
+          ],
+          "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
+        },
+        {
+          "text": "Pantai Tangsi atau yang lebih dikenal dengan Pantai Pink dari Pulau Lombok terletak di desa Sekaroh, kecamatan Jerowaru, kabupaten Lombok Timur adalah sebuah destinasi wisatawan yang menarik dan patut untuk dikunjungi karena keunikannya. Pantai ini merupakan salah satu dari tujuh pantai di dunia yang memiliki pasir pantai berwarna pink, dan satu dari dua pantai di Indonesia yang memiliki pasir pantai berwarna pink.",
+          "image": "https://asset.kompas.com/crops/KNR8p0fjwc-sRHxLpB2T9yYOFvY=/228x0:4362x2756/1200x800/data/photo/2019/08/05/5d4837f28ad6a.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Gazebo untuk bersantai",
+            "Spot snorkeling dan diving"
+          ],
+          "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_tanjung_ringgit",
+      "patterns": [
+        "pantai tanjung ringgit",
+        "apa itu pantai tanjung ringgit",
+        "apa yang ada di pantai tanjung ringgit",
+        "apa saja yang ada di pantai tanjung ringgit"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Tanjung Ringgit adalah destinasi wisata yang menawarkan pemandangan indah dengan tebing karang dan pantai yang masih alami. Tanjung Ringgit juga populer sebagai tempat untuk menikmati sunset yang spektakuler.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pantai_Tanjung_Ringgit.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Area untuk foto"
+          ],
+          "maps": "https://maps.app.goo.gl/3Gq9vG1q1XjVh8LGA"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_suar",
+      "patterns": [
+        "pantai suar",
+        "apa itu pantai suar",
+        "apa yang ada di pantai suar"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Suar adalah pantai yang tenang dengan pasir putih dan air laut yang jernih. Tempat ini cocok untuk berjemur, berenang, atau sekadar bersantai menikmati suasana alami.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pantai_Suar_Lombok.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Spot selfie"
+          ],
+          "maps": "https://maps.app.goo.gl/Cy9vhWqYftS1KbLE7"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_selang",
+      "patterns": [
+        "pantai selang",
+        "apa itu pantai selang",
+        "apa yang ada di pantai selang"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Selang adalah pantai tersembunyi di Jerowaru yang dikenal dengan pasir putih dan pemandangan laut yang biru. Cocok untuk yang ingin menghindari keramaian.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Pantai_Selang_Lombok.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Spot snorkeling"
+          ],
+          "maps": "https://maps.app.goo.gl/6hEdQjkYqF4gxttF9"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_tanjung_luar",
+      "patterns": [
+        "pantai tanjung luar",
+        "apa itu pantai tanjung luar",
+        "apa yang ada di pantai tanjung luar"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Tanjung Luar adalah salah satu pantai yang terkenal di Jerowaru. Di sini, Anda bisa menikmati pemandangan laut yang tenang dan indah. Pantai ini juga sering dijadikan tempat untuk menyelam dan memancing.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Pantai_Tanjung_Luar_Lombok.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Warung makan",
+            "Toilet umum",
+            "Spot snorkeling"
+          ],
+          "maps": "https://maps.app.goo.gl/QQw93HzM5Zz3U9Ae9"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_seger",
+      "patterns": [
+        "pantai seger",
+        "apa itu pantai seger",
+        "apa yang ada di pantai seger"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Seger adalah pantai yang terkenal di Jerowaru, dengan pasir putih yang lembut dan air laut yang biru. Pantai ini juga dikenal dengan pemandangan alam yang indah serta cocok untuk berjemur dan bermain air.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Pantai_Seger.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Gazebo untuk bersantai"
+          ],
+          "maps": "https://maps.app.goo.gl/sRv8ktDb4pB2GGyFA"
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "informasi_pantai_dira",
+      "patterns": [
+        "pantai dira",
+        "apa itu pantai dira",
+        "apa yang ada di pantai dira"
+      ],
+      "responses": [
+        {
+          "text": "Pantai Dira merupakan pantai yang sangat indah dengan air jernih dan pasir putih. Selain itu, tempat ini cukup tenang dan cocok untuk yang ingin bersantai jauh dari keramaian.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Pantai_Dira_Lombok.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Spot selfie"
+          ],
+          "maps": "https://maps.app.goo.gl/k3PmKM2e9FmrFZVb9"
+        }
+      ],
+      "context": [""]
+    }
+  ]
+  
+}
