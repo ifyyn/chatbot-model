@@ -1,34 +1,56 @@
 {
- "intents": [
+  "intents": [
+    {
+      "tag": "notfound",
+      "patterns": ["", "", "", "", ""],
+      "responses": [
+        "Maaf tidak tahu",
+        "Saya tidak tahu",
+        "Kata diluar kemampuan kami",
+        "Kami tidak tahu, mungkin Anda bisa menanyakan mengenai destinasi wisata di kecamatan jerowaru",
+        "Mungkin Anda bisa menanyakan mengenai aplikasi ini",
+        "Mohon maaf pertanyaan yang anda tanyakan keluar dari kemampuan saya",
+        "opssssss pertanyaan anda tidak di temukan"
+      ],
+      "context": []
+    },
     {
       "tag": "selamat_datang",
       "patterns": [
-        "selamat datang",
-        "halo",
-        "hai",
-        "apa kabar",
-        "hello"
+        "Halo",
+        "Hai",
+        "Selamat pagi",
+        "Selamat siang",
+        "Selamat sore",
+        "Selamat malam",
+        "Apa kabar?",
+        "Bagaimana hari Anda?",
+        "Tolong bantu saya",
+        "Mau tanya",
+        "Hay",
+        "Hy",
+        "Hallo",
+        "Hey",
+        "Hola",
+        "Hello",
+        "P",
+        "Mikum",
+        "Assalamualaikum",
+        "Hi"
       ],
       "responses": [
-        {
-          "text": "Selamat datang di goJerowaru! Kami siap membantu Anda menjelajahi keindahan wisata di Kecamatan Jerowaru. Apa yang bisa saya bantu hari ini?",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gojerowaru_Welcome.jpg"
-        }
-      ],
-      "context": [""]
-    },
-    {
-      "tag": "pengenalan_diri",
-      "patterns": [
-        "siapa kamu",
-        "kenalan",
-        "apa kamu bisa bantu",
-        "ceritakan tentang kamu"
-      ],
-      "responses": [
-        {
-          "text": "Halo! Saya adalah chatbot yang siap memberikan informasi seputar wisata di Kecamatan Jerowaru. Saya di sini untuk membantu Anda menemukan tempat wisata terbaik, memberikan informasi rute, dan menjawab pertanyaan lain yang Anda miliki. Ayo, jelajahi Jerowaru bersama saya!"
-        }
+        "Selamat datang di goJerowaru! Kami siap membantu Anda menjelajahi keindahan wisata di Kecamatan Jerowaru. Apa yang bisa saya bantu hari ini?",
+        "Halo! Selamat datang di goJerowaru. Ingin tahu destinasi wisata menarik di Jerowaru?",
+        "Hai, senang bisa membantu Anda! Silakan tanyakan seputar tempat wisata di Jerowaru.",
+        "Assalamualaikum! goJerowaru hadir untuk bantu jelajahi wisata indah di Kecamatan Jerowaru.",
+        "Halo wisatawan! Butuh info pantai, rute, atau saran liburan di Jerowaru?",
+        "Selamat datang kembali! Siap menjelajah Jerowaru bersama goJerowaru?",
+        "Hi! Saya siap membantu. Mau cari pantai, rute, atau rekomendasi wisata di Jerowaru?",
+        "Halo! goJerowaru di sini, siap menemani liburanmu di Kecamatan Jerowaru!",
+        "Wah, senang bertemu denganmu! Yuk cari tahu tentang destinasi wisata di Jerowaru!",
+        "Halo! Jangan ragu bertanya. Saya siap bantu kamu menjelajah Jerowaru dengan mudah.",
+        "Hi, sobat wisata! Ada yang bisa saya bantu hari ini di goJerowaru?",
+        "Apa kabar? goJerowaru hadir untuk bantu kamu eksplor wisata terbaik di Jerowaru!"
       ],
       "context": [""]
     },
@@ -36,14 +58,45 @@
       "tag": "sampai_jumpa",
       "patterns": [
         "sampai jumpa",
-        "terima kasih",
+        "terimakasih",
+        "terimakasih",
         "selamat tinggal",
         "dadah",
-        "see you"
+        "see you",
+        "bye",
+        "bye bye",
+        "makasih ya",
+        "thank you",
+        "thanks",
+        "terima kasih banyak",
+        "oke makasih",
+        "sip, makasih",
+        "sampai ketemu lagi",
+        "goodbye",
+        "see you later",
+        "aku pergi dulu",
+        "sampai nanti",
+        "makasih bot",
+        "makasih gojerowaru"
       ],
       "responses": [
         {
-          "text": "Terima kasih telah menggunakan goJerowaru! Sampai jumpa lagi dan semoga perjalanan Anda menyenankan. Jangan ragu untuk kembali kapan saja!"
+          "text": "Terima kasih telah menggunakan goJerowaru! Sampai jumpa lagi dan semoga perjalanan Anda menyenangkan. Jangan ragu untuk kembali kapan saja!"
+        },
+        {
+          "text": "Sampai jumpa! Semoga hari Anda menyenangkan dan penuh petualangan di Jerowaru!"
+        },
+        {
+          "text": "Terima kasih banyak! goJerowaru senang bisa membantu. Sampai ketemu lagi ya!"
+        },
+        {
+          "text": "Senang bisa membantu! Kalau butuh panduan lagi, saya selalu siap. Sampai nanti!"
+        },
+        {
+          "text": "Makasih sudah mampir! Jangan lupa kembali jika ingin eksplorasi tempat wisata lainnya di Jerowaru!"
+        },
+        {
+          "text": "Sampai jumpa di petualangan selanjutnya. Tetap semangat dan jaga kesehatan!"
         }
       ],
       "context": [""]
@@ -51,14 +104,39 @@
     {
       "tag": "informasi_wisata",
       "patterns": [
-        "apa itu goJerowaru",
+        "gojerowaru",
+        "go jerowaru",
+        "apa itu gojerowaru",
         "apa yang ada di goJerowaru",
         "apa saja yang ada di goJerowaru",
-        "apa yang bisa saya lakukan di goJerowaru"
+        "apa yang bisa saya lakukan di goJerowaru",
+        "goJerowaru itu apa?",
+        "bisa jelaskan goJerowaru?",
+        "apa fungsi goJerowaru?",
+        "apa kegunaan goJerowaru?",
+        "situs ini untuk apa?",
+        "platform ini tentang apa?",
+        "apa layanan dari goJerowaru?",
+        "goJerowaru untuk apa sih?",
+        "kamu bisa bantu apa?",
+        "informasi apa yang tersedia di goJerowaru?",
+        "apa yang bisa dicari di sini?"
       ],
       "responses": [
         {
           "text": "goJerowaru adalah platform yang menyediakan informasi lengkap tentang tempat wisata, kuliner, dan aktivitas menarik di Kecamatan Jerowaru. Anda dapat menemukan berbagai destinasi wisata, mulai dari pantai, bukit, hingga tempat bersejarah."
+        },
+        {
+          "text": "goJerowaru hadir untuk membantu Anda menjelajahi berbagai tempat wisata terbaik di Kecamatan Jerowaru, Lombok Timur. Kami menyediakan informasi destinasi, rute perjalanan, serta saran liburan."
+        },
+        {
+          "text": "Dengan goJerowaru, Anda bisa mencari informasi pantai indah, tempat makan lokal, rute perjalanan, dan aktivitas menarik lainnya di kawasan Jerowaru."
+        },
+        {
+          "text": "goJerowaru adalah asisten wisata digital Anda. Butuh info pantai eksotis, kuliner khas, atau jalur terbaik ke lokasi wisata? Semua ada di sini!"
+        },
+        {
+          "text": "goJerowaru dirancang untuk mempermudah wisatawan dalam menemukan keindahan alam dan budaya di Jerowaru. Ayo mulai petualanganmu!"
         }
       ],
       "context": [""]
@@ -81,33 +159,42 @@
         "pantai terbaik di jerowaru",
         "jelaskan tentang pantai di jerowaru",
         "wisata pantai jerowaru",
-        "saya ingin tahu tentang pantai di jerowaru"
+        "saya ingin tahu tentang pantai di jerowaru",
+        "ada berapa pantai di jerowaru?",
+        "pantai hits di jerowaru apa aja?",
+        "pantai yang wajib dikunjungi di jerowaru",
+        "pantai yang indah di jerowaru",
+        "tempat wisata pantai di lombok timur",
+        "pantai dekat jerowaru",
+        "informasi pantai jerowaru dong"
       ],
       "responses": [
         {
-          "text": "Di Jerowaru, terdapat banyak pantai indah dan unik yang bisa kamu kunjungi. Beberapa di antaranya adalah:\n \n 1. Pantai Pink \n 2. Pantai Tanjung Ringgit \n 3. Pantai Penyisok\n 4. Pantai Ekas \n 5. Pantai Kura-Kura / Pantai Sungkun \n 6. Pantai Kaliantan \n 7. Pantai Cemara \n 8. Balai Mangrove Jerowaru \n \n Setiap pantai menawarkan pemandangan alam yang khas dan pengalaman wisata yang menarik."
+          "text": "Di Jerowaru, terdapat banyak pantai indah dan unik yang bisa kamu kunjungi. Beberapa di antaranya adalah:\n\n1. Pantai Pink\n2. Pantai Tanjung Ringgit\n3. Pantai Penyisok\n4. Pantai Ekas\n5. Pantai Kura-Kura / Sungkun\n6. Pantai Kaliantan\n7. Pantai Cemara\n8. Balai Mangrove Jerowaru\n\nSetiap pantai menawarkan pemandangan alam yang khas dan pengalaman wisata yang menarik."
         },
         {
           "text": "Jerowaru adalah surga tersembunyi di Lombok Timur dengan banyak destinasi pantai menarik. Pantai Pink terkenal dengan pasir berwarna merah muda, sementara Tanjung Ringgit menyajikan tebing laut yang eksotis. Ada juga Pantai Penyisok yang masih alami, serta Pantai Ekas yang cocok untuk berselancar."
         },
         {
-          "text": "Beberapa pantai populer di Jerowaru antara lain:\n\nPantai Pink: unik dengan pasir berwarna merah muda,\nPantai Tanjung Ringgit: terkenal dengan tebing dan pemandangan laut luas.,\nPantai Penyisok: cocok untuk pecinta keheningan., \n antai Ekas: populer untuk surfing., \n Pantai Kura-Kura / Sungkun: eksotis dan alami., \n Pantai Kaliantan dan Pantai Cemara: cocok untuk bersantai., \n Balai Mangrove**: wisata edukatif dengan pemandangan hutan mangrove."
-        }
-      ],
-      "context": [""]
-    },    
-    {
-      "tag": "informasi_pantai_jerowaru",
-      "patterns": [
-        "pantai jerowaru",
-        "apa itu pantai jerowaru",
-        "apa yang ada di pantai jerowaru",
-        "apa saja yang ada di pantai jerowaru"
-      ],
-      "responses": [
+          "text": "Beberapa pantai populer di Jerowaru antara lain:\n\n- Pantai Pink: unik dengan pasir berwarna merah muda\n- Pantai Tanjung Ringgit: terkenal dengan tebing dan pemandangan laut luas\n- Pantai Penyisok: cocok untuk pecinta ketenangan\n- Pantai Ekas: spot favorit untuk surfing\n- Pantai Sungkun: eksotis dan alami\n- Pantai Kaliantan & Pantai Cemara: ideal untuk bersantai\n- Balai Mangrove: cocok untuk wisata edukatif dan melihat hutan bakau"
+        },
         {
-          "text": "Pantai Jerowaru adalah salah satu pantai terkenal di Kecamatan Jerowaru. Pantai ini menawarkan pemandangan yang indah dan suasana yang tenang, cocok untuk bersantai dan menikmati keindahan alam.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gojerowaru_Welcome.jpg"
+          "text": "Ingin liburan ke pantai? Jerowaru punya banyak pilihan! Dari yang terkenal seperti Pantai Pink hingga yang tersembunyi seperti Pantai Sungkun. Semua pantainya memesona dan layak dikunjungi!"
+        },
+        {
+          "text": "Pantai-pantai di Jerowaru cocok untuk berbagai aktivitas, mulai dari bersantai, surfing, hingga foto-foto estetik. Yuk, eksplorasi pantai-pantai di sisi timur Lombok ini!"
+        },
+        {
+          "text": "Kalau kamu suka suasana alami dan tenang, Pantai Penyisok dan Pantai Sungkun bisa jadi pilihan terbaik. Tapi kalau ingin pemandangan yang instagramable, jangan lewatkan Pantai Pink!"
+        },
+        {
+          "text": "Selain Pantai Pink yang ikonik, kamu juga bisa menemukan tempat eksotis lain seperti Tanjung Ringgit dengan tebing curam yang menghadap langsung ke laut lepas."
+        },
+        {
+          "text": "Setiap pantai di Jerowaru punya ciri khas. Ada yang cocok untuk keluarga, ada juga yang cocok untuk petualangan. Coba sebutkan jenis kegiatan yang kamu suka, biar aku bantu rekomendasikan!"
+        },
+        {
+          "text": "Mau berenang, berjemur, atau sekadar menikmati sunset? Semua bisa kamu lakukan di pantai-pantai cantik di Jerowaru. Yuk atur jadwal liburanmu sekarang!"
         }
       ],
       "context": [""]
@@ -128,7 +215,7 @@
       "responses": [
         {
           "text": "Pantai Pink adalah salah satu pantai terkenal di Jerowaru. Pantai ini memiliki pasir berwarna pink yang unik dan pemandangan yang menakjubkan. Anda dapat menikmati keindahan alam sambil bersantai di tepi pantai.",
-          "image": "https://www.rayadventure.com/wp-content/uploads/2018/08/pantai-pink-645x400.jpg",
+          "image": "https://bams.jambiprov.go.id/wp-content/uploads/2023/09/Pantai-Pink-Lombok.png",
           "fasilitas": [
             "Parkir",
             "Toilet umum",
@@ -139,7 +226,7 @@
           "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
         },
         {
-          "text": "Pantai Tangsi atau yang lebih dikenal dengan Pantai Pink dari Pulau Lombok terletak di desa Sekaroh, kecamatan Jerowaru, kabupaten Lombok Timur adalah sebuah destinasi wisatawan yang menarik dan patut untuk dikunjungi karena keunikannya. Pantai ini merupakan salah satu dari tujuh pantai di dunia yang memiliki pasir pantai berwarna pink, dan satu dari dua pantai di Indonesia yang memiliki pasir pantai berwarna pink.",
+          "text": "Pantai Tangsi atau Pantai Pink merupakan destinasi wisata unik di Lombok Timur dengan pasir berwarna merah muda. Lokasinya berada di desa Sekaroh, Jerowaru, dan menjadi salah satu dari sedikit pantai berpasir pink di dunia.",
           "image": "https://asset.kompas.com/crops/KNR8p0fjwc-sRHxLpB2T9yYOFvY=/228x0:4362x2756/1200x800/data/photo/2019/08/05/5d4837f28ad6a.jpg",
           "fasilitas": [
             "Parkir",
@@ -149,6 +236,42 @@
             "Spot snorkeling dan diving"
           ],
           "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
+        },
+        {
+          "text": "Pantai Pink adalah destinasi wisata andalan di Lombok Timur. Warna pasirnya yang pink terjadi secara alami karena pecahan karang merah yang tercampur dengan pasir putih. Cocok untuk liburan keluarga maupun healing sendirian.",
+          "image": "https://lombokexperience.com/wp-content/uploads/2022/05/Pesona-Alam-Kuliner-di-Pantai-Pink-Tangsi-Lombok-Timur-scaled.jpg",
+          "fasilitas": [
+            "Tempat parkir",
+            "Toilet umum",
+            "Warung makan lokal",
+            "Spot snorkeling dan diving",
+            "Gazebo pinggir pantai"
+          ],
+          "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
+        },
+        {
+          "text": "Kalau kamu suka tempat yang unik dan tenang, Pantai Pink cocok banget buat kamu. Keindahan pasir merah muda dan laut birunya bikin betah berlama-lama. Jangan lupa bawa kamera ya!",
+          "image": "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/original/events/2020/12/22/744e2706-bd1b-46cc-a8d5-57fe3a7ffdd2-1608637812861-1fe167578a55d902073174771101342c.jpg",
+          "fasilitas": [
+            "Parkiran luas",
+            "Warung makan",
+            "Gazebo",
+            "Area snorkeling",
+            "Toilet umum"
+          ],
+          "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
+        },
+        {
+          "text": "Pantai Pink atau Pantai Tangsi adalah salah satu pantai paling instagramable di Lombok. Keindahannya bikin siapa pun betah. Cocok untuk berlibur dengan keluarga atau teman dekat.",
+          "image": "https://asset.kompas.com/crops/KNR8p0fjwc-sRHxLpB2T9yYOFvY=/228x0:4362x2756/1200x800/data/photo/2019/08/05/5d4837f28ad6a.jpg",
+          "fasilitas": [
+            "Parkir kendaraan",
+            "Toilet umum",
+            "Warung makan sederhana",
+            "Snorkeling spot",
+            "Gazebo di pinggir pantai"
+          ],
+          "maps": "https://maps.app.goo.gl/qXWFRisuYpG1NyRs9"
         }
       ],
       "context": [""]
@@ -156,6 +279,9 @@
     {
       "tag": "informasi_pantai_tanjung_ringgit",
       "patterns": [
+        "tanjung ringgit",
+        "rute tanjung ringgit",
+        "jalan ke pantai ringgit",
         "pantai tanjung ringgit",
         "apa itu pantai tanjung ringgit",
         "apa yang ada di pantai tanjung ringgit",
@@ -164,128 +290,179 @@
       "responses": [
         {
           "text": "Pantai Tanjung Ringgit adalah destinasi wisata yang menawarkan pemandangan indah dengan tebing karang dan pantai yang masih alami. Tanjung Ringgit juga populer sebagai tempat untuk menikmati sunset yang spektakuler.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pantai_Tanjung_Ringgit.jpg",
+          "image": "https://cms.dolanesia.travel/files/2021/05/TANJUNG-RINGGIT-2.jpeg",
           "fasilitas": [
             "Parkir",
             "Toilet umum",
             "Warung makan",
             "Area untuk foto"
           ],
-          "maps": "https://maps.app.goo.gl/3Gq9vG1q1XjVh8LGA"
+          "maps": "https://maps.app.goo.gl/XJ9r7qbpfdF3bTMi9"
+        },
+        {
+          "text": "Tanjung Ringgit merupakan salah satu spot terbaik di Jerowaru untuk menikmati panorama tebing laut yang dramatis. Lokasinya masih alami dan cocok untuk kamu yang suka petualangan serta fotografi alam.",
+          "image": "https://mobillombok.com/wp-content/uploads/2019/10/Pantai-Tanjung-Ringgit-sumber-ig-yo_hendrarossifumi.jpg",
+          "fasilitas": [
+            "Area parkir",
+            "Spot foto",
+            "Tempat berteduh sederhana",
+            "Toilet seadanya"
+          ],
+          "maps": "https://maps.app.goo.gl/XJ9r7qbpfdF3bTMi9"
+        },
+        {
+          "text": "Di Pantai Tanjung Ringgit, kamu bisa menemukan sisa-sisa meriam peninggalan Jepang dari masa Perang Dunia II, serta gua-gua bersejarah. Tempat ini tidak hanya indah, tapi juga kaya akan nilai sejarah.",
+          "image": "https://lombokini.com/wp-content/uploads/2025/04/Tanjung-Ringgit-Jerowaru.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Spot sejarah",
+            "Toilet umum",
+            "Warung lokal"
+          ],
+          "maps": "https://maps.app.goo.gl/XJ9r7qbpfdF3bTMi9"
+        },
+        {
+          "text": "Tanjung Ringgit menyajikan pemandangan laut biru yang berpadu dengan tebing batu karang putih. Tempat ini sangat cocok untuk healing dan menjauh sejenak dari keramaian kota.",
+          "image": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/583/2024/05/05/tanjung-ringgit-768x557-3872956628.jpg",
+          "fasilitas": [
+            "Tempat parkir",
+            "Toilet seadanya",
+            "Warung kecil",
+            "Gazebo alami"
+          ],
+          "maps": "https://maps.app.goo.gl/XJ9r7qbpfdF3bTMi9"
+        },
+        {
+          "text": "Tanjung Ringgit adalah sebuah tanjung di pantai timur Pulau Lombok, tepatnya di Desa Pamongkong, Kecamatan Jerowaru, Lombok Timur. Kawasan ini merupakan hutan lindung yang dikelola oleh Kementerian Kehutanan Indonesia. Tanjung Ringgit menawarkan panorama alam yang indah, dengan tebing-tebing cadas dan curam yang berbatasan langsung dengan Samudra Hindia. \n\nTanjung Ringgit juga menyimpan beberapa peninggalan bersejarah, seperti meriam besar, gua Jepang, dan sumur air tawar yang unik. Pemandangan deburan ombak yang besar dan terhempas ke dinding cadas juga menjadi daya tarik utama di sini.\n\nUntuk mencapai Tanjung Ringgit, Anda bisa menggunakan kendaraan pribadi dari Mataram dan mengikuti rute Jalan Udayana, Jalan Ahmad Yani, Jalan Raya Praya, Jalan Diponegoro, Jalan Jendral Sudirman, Jalan Serumbung-Ekas, dan Sekaroh. Karena tidak ada angkutan umum yang langsung menuju Tanjung Ringgit, disarankan untuk mempersiapkan kendaraan dengan baik dan membawa persediaan makanan dan minuman yang cukup.\n\nTanjung Ringgit buka dari pukul 06.00 hingga 17.00 WITA, dengan biaya tiket masuk sebesar Rp 5.000.",
+          "image": "https://highlight.id/wp-content/uploads/2018/06/Highlight_daftar-tempat-destinasi-wisata-terbaik-populer-pantai-tanjung-ringgit-lombok-mataram_03.jpg",
+          "fasilitas": [
+            "Parkir",
+            "Toilet umum",
+            "Warung makan",
+            "Area untuk foto",
+            "Spot sejarah"
+          ],
+          "maps": "https://maps.app.goo.gl/XJ9r7qbpfdF3bTMi9"
         }
       ],
       "context": [""]
     },
     {
-      "tag": "informasi_pantai_suar",
+      "tag": "informasi_balai_mangrove",
       "patterns": [
-        "pantai suar",
-        "apa itu pantai suar",
-        "apa yang ada di pantai suar"
+        "balai mangrove",
+        "balai mangrove jerowaru",
+        "rute ke balai mangrove",
+        "bagaimana cara ke balai mangrove",
+        "apa itu balai mangrove jerowaru",
+        "apa yang ada di balai mangrove jerowaru",
+        "fasilitas di balai mangrove jerowaru"
       ],
       "responses": [
         {
-          "text": "Pantai Suar adalah pantai yang tenang dengan pasir putih dan air laut yang jernih. Tempat ini cocok untuk berjemur, berenang, atau sekadar bersantai menikmati suasana alami.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pantai_Suar_Lombok.jpg",
-          "fasilitas": [
-            "Parkir",
-            "Toilet umum",
-            "Warung makan",
-            "Spot selfie"
-          ],
-          "maps": "https://maps.app.goo.gl/Cy9vhWqYftS1KbLE7"
+          "text": "Balai Mangrove Jerowaru terletak di Dusun Paton Bako, Desa Jerowaru, Kecamatan Jerowaru, Kabupaten Lombok Timur, Nusa Tenggara Barat atau NTB. Namanya desatinasi wisata Bale Mangrove yang dikelola dengan konsep ekowisata bahari mengrove oleh Kelompak Sadar Wisata atau Pokdarwis Bale Mangrove. Dalam bahasa Suku Sasak, Bale berarti rumah.",
+          "image": "https://ntb.jadesta.com/imgpost/138728.jpg",
+          "fasilitas": ["Mushola", "Warung Makan", "Toilet", "Temapat Parkir"],
+          "tiket": "Rp 5.0000",
+          "maps": "https://maps.app.goo.gl/3tsTSVJcaC37K8qn8"
+        },
+        {
+          "text": "Wisata ini menawarkan hamparan hutan mangrove yang rindang dan sejuk, memberikan nuansa yang tenang dan menenangkan.Di sini, pengunjung bisa menikmati keindahan alam sambil berjalan-jalan santai menyusuri jalur-jalur yang telah disediakan.Salah satu hal yang membuat Ekowisata Mangrove Jerowaru semakin menarik adalah banyaknya tempat bersantai di sepanjang jalur, yang memungkinkan pengunjung untuk beristirahat sejenak sambil menikmati keindahan alam sekitar.",
+          "image": "https://cdn0-production-images-kly.akamaized.net/33cYlTl65vo_wayQdBcnfWsNPVI=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5043355/original/088986300_1733817959-1733754518994_fungsi-hutan-mangrove.jpg",
+          "fasilitas": ["Mushola", "Warung Makan", "Toilet", "Temapat Parkir"],
+          "tiket": "Rp 5.0000",
+          "maps": "https://maps.app.goo.gl/3tsTSVJcaC37K8qn8"
+        },
+        {
+          "text": "Di Ekowisata Bale Mangrove, Anda dapat menikmati segala keindahan hutan mangrove dengan hanya membayar 5000/Orang Dewasa, sementara anak-anak dapat masuk secara gratis. Selain itu, fasilitas parkir dan toilet juga disediakan secara gratis. Nikmati kesejukan dan keasrian hutan mangrove, saksikan kecantikan sunrise dan sunset, dan jelajahi keindahan mangrove dengan perahu kano. Bagi yang ingin merasakan sensasi berkemah di dalam hutan mangrove, tersedia juga camping ground.",
+          "image": "http://balemangrove.com/wp-content/uploads/2024/09/photo_6303121926201130307_y.jpg",
+          "fasilitas": ["Mushola", "Warung Makan", "Toilet", "Temapat Parkir"],
+          "maps": "https://maps.app.goo.gl/3tsTSVJcaC37K8qn8"
         }
       ],
       "context": [""]
     },
     {
-      "tag": "informasi_pantai_selang",
+      "tag": "informasi_pantai_kura_kura",
       "patterns": [
-        "pantai selang",
-        "apa itu pantai selang",
-        "apa yang ada di pantai selang"
+        "pantai kura kura",
+        "pantai sungkun",
+        "info pantai kura kura",
+        "apa itu pantai kura kura",
+        "pantai kura kura jerowaru",
+        "rute ke pantai kura kura",
+        "fasilitas pantai kura kura",
+        "tiket masuk pantai kura kura",
+        "pantai untuk surfing di lombok timur"
       ],
       "responses": [
         {
-          "text": "Pantai Selang adalah pantai tersembunyi di Jerowaru yang dikenal dengan pasir putih dan pemandangan laut yang biru. Cocok untuk yang ingin menghindari keramaian.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Pantai_Selang_Lombok.jpg",
+          "text": "Pantai Kura-Kura, atau juga dikenal sebagai Pantai Sungkun, terletak di Kecamatan Jerowaru, Lombok Timur. Pantai ini menawarkan pemandangan indah Samudra Hindia dan cocok untuk kegiatan olahraga air seperti berselancar. Keindahan alamnya yang masih alami membuat tempat ini ideal untuk melepas penat dan menikmati ketenangan.",
+          "image": "https://www.avia.travel/upload/images/2(5).jpg",
           "fasilitas": [
-            "Parkir",
-            "Toilet umum",
-            "Warung makan",
-            "Spot snorkeling"
+            "Tempat parkir yang luas untuk motor dan mobil",
+            "Musholla untuk shalat",
+            "Tempat duduk untuk bersantai",
+            "Kamar mandi untuk bilas dan mengganti pakaian",
+            "Tempat penyewaan alat-alat snorkeling dan diving",
+            "Warung makanan dan minuman."
           ],
-          "maps": "https://maps.app.goo.gl/6hEdQjkYqF4gxttF9"
+          "tiket_masuk": "Rp 15.000",
+          "maps": "https://maps.app.goo.gl/VmSLmc6jj9VwX4yK6"
+        },
+        {
+          "text": "Pantai Sungkun (Kura-Kura) merupakan salah satu surga tersembunyi di ujung selatan Lombok Timur. Pantai ini dikelilingi bukit dan bebatuan, dengan suasana tenang dan angin laut yang menyegarkan. Banyak pengunjung datang untuk sekadar bersantai atau menikmati sunset dari atas bukit.",
+          "image": "https://images.genpi.co/uploads/ntb/arsip/normal/2022/07/31/inilah-pantai-kura-kura-di-lombok-timur-yang-menarik-untuk-d-bbf4.jpg",
+          "fasilitas": [
+            "Tempat parkir yang luas untuk motor dan mobil",
+            "Musholla untuk shalat",
+            "Tempat duduk untuk bersantai",
+            "Kamar mandi untuk bilas dan mengganti pakaian",
+            "Tempat penyewaan alat-alat snorkeling dan diving",
+            "Warung makanan dan minuman."
+          ],
+          "tiket_masuk": "Rp 15.000",
+          "maps": "https://maps.app.goo.gl/VmSLmc6jj9VwX4yK6"
         }
       ],
       "context": [""]
     },
     {
-      "tag": "informasi_pantai_tanjung_luar",
+      "tag": "informasi_pantai_penyisok",
       "patterns": [
-        "pantai tanjung luar",
-        "apa itu pantai tanjung luar",
-        "apa yang ada di pantai tanjung luar"
+        "pantai penyisok",
+        "info pantai penyisok",
+        "lokasi pantai penyisok",
+        "rute ke pantai penyisok",
+        "fasilitas pantai penyisok",
+        "tiket masuk pantai penyisok",
+        "pantai indah di jerowaru",
+        "hidden gem di lombok timur"
       ],
       "responses": [
         {
-          "text": "Pantai Tanjung Luar adalah salah satu pantai yang terkenal di Jerowaru. Di sini, Anda bisa menikmati pemandangan laut yang tenang dan indah. Pantai ini juga sering dijadikan tempat untuk menyelam dan memancing.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Pantai_Tanjung_Luar_Lombok.jpg",
-          "fasilitas": [
-            "Parkir",
-            "Warung makan",
-            "Toilet umum",
-            "Spot snorkeling"
-          ],
-          "maps": "https://maps.app.goo.gl/QQw93HzM5Zz3U9Ae9"
-        }
-      ],
-      "context": [""]
-    },
-    {
-      "tag": "informasi_pantai_seger",
-      "patterns": [
-        "pantai seger",
-        "apa itu pantai seger",
-        "apa yang ada di pantai seger"
-      ],
-      "responses": [
+          "text": "Pantai Penyisok adalah pantai tersembunyi di Desa Sekaroh, Jerowaru, Lombok Timur. Dikelilingi tebing batu cadas dan savana yang luas, pemandangannya sangat indah dan menenangkan. Sangat cocok bagi kamu yang ingin healing dari hiruk-pikuk kota.",
+          "image": "https://img2.beritasatu.com/cache/investor/480x310-3/1647140003.jpeg",
+          "fasilitas": "Belum tersedia fasilitas umum seperti toilet, warung, dan tempat parkir.",
+          "tiket_masuk": "Rp10.000",
+          "maps": "https://maps.app.goo.gl/DaLdauPPbkfy24yz5"
+        },
         {
-          "text": "Pantai Seger adalah pantai yang terkenal di Jerowaru, dengan pasir putih yang lembut dan air laut yang biru. Pantai ini juga dikenal dengan pemandangan alam yang indah serta cocok untuk berjemur dan bermain air.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Pantai_Seger.jpg",
-          "fasilitas": [
-            "Parkir",
-            "Toilet umum",
-            "Warung makan",
-            "Gazebo untuk bersantai"
-          ],
-          "maps": "https://maps.app.goo.gl/sRv8ktDb4pB2GGyFA"
-        }
-      ],
-      "context": [""]
-    },
-    {
-      "tag": "informasi_pantai_dira",
-      "patterns": [
-        "pantai dira",
-        "apa itu pantai dira",
-        "apa yang ada di pantai dira"
-      ],
-      "responses": [
+          "text": "Pantai Penyisok menyuguhkan keindahan laut lepas yang dipadukan dengan tebing tinggi dan padang rumput yang luas. Salah satu hidden gem di Lombok yang cocok untuk petualangan alam!",
+          "image": "https://cdn.wisata.app/diary/13101120-5039-80bc-8019-e2f059ddb83c.jpg",
+          "fasilitas": "Belum ada fasilitas umum, jadi bawa perlengkapan sendiri.",
+          "tiket_masuk": "Rp10.000",
+          "maps": "https://maps.app.goo.gl/DaLdauPPbkfy24yz5"
+        },
         {
-          "text": "Pantai Dira merupakan pantai yang sangat indah dengan air jernih dan pasir putih. Selain itu, tempat ini cukup tenang dan cocok untuk yang ingin bersantai jauh dari keramaian.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Pantai_Dira_Lombok.jpg",
-          "fasilitas": [
-            "Parkir",
-            "Toilet umum",
-            "Warung makan",
-            "Spot selfie"
-          ],
-          "maps": "https://maps.app.goo.gl/k3PmKM2e9FmrFZVb9"
+          "text": "Kalau kamu suka tempat sepi dan alami, Pantai Penyisok cocok banget! Dengan tebing curam dan savana hijau, tempat ini sangat fotogenik dan cocok buat camping.",
+          "image": "https://cdn.wisata.app/diary/13101120-5039-807d-aa48-c8cfcd6787f1_sm.jpg",
+          "fasilitas": "Belum tersedia fasilitas publik.",
+          "tiket_masuk": "Rp10.000",
+          "maps": "https://maps.app.goo.gl/DaLdauPPbkfy24yz5"
         }
       ],
       "context": [""]
     }
   ]
-  
 }

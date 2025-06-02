@@ -77,7 +77,7 @@ opt = Adam(learning_rate=0.01, decay=1e-6)
 model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
 # Model Training
-history = model.fit(train_x, train_y, epochs=300, verbose=1)
+history = model.fit(train_x, train_y, epochs=700, verbose=1)
 model.save('chatbot_model.h5')
 
 # Evaluation
@@ -106,4 +106,4 @@ plt.show()
 print("\n\U0001F4CB Dataset (patterns dan tag):\n")
 df = pd.DataFrame([(pattern, intent['tag']) for intent in data['intents'] for pattern in intent['patterns']],
                   columns=['Pattern', 'Tag'])
-print(df.head(6))
+print(df.head(10))
