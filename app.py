@@ -11,11 +11,18 @@ def home():
 
 @app.route("/chat", methods=["POST"])
 def chat():
-    data = request.get_json()
-    msg = data.get("message")
-    intents = predict_class(msg)
-    res = get_response(intents)
-    return jsonify({"response": res})
+    try:
+        data = request.get_json()
+        if not data or "message" not in data:
+            return jsonify({"error": "Field 'message' diperlukan"}), 400
+        
+        msg = data["message"]
+        intents = predict_class(msg)  
+        res = get_response(intents)  
+        return jsonify({"response": res})
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)
