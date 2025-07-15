@@ -48,12 +48,16 @@ def get_response(intent_list):
     tag = intent_list[0]['intent']
     for intent in intents['intents']:
         if intent['tag'] == tag:
-            return random.choice(intent['responses']), tag
+            response = random.choice(intent['responses'])
+            if isinstance(response, str):
+                response = {"text": response}  # bungkus string dalam objek
+            return response, tag
     # fallback
     return {
         "title": "🤖 Maklum AI Baru",
         "text": "Kata yang Anda ketik belum ada di data saya. Maklum, saya AI baru. Tapi saya masih bisa bantu soal rute, lokasi, aktivitas, harga tiket, dan fasilitas di Jerowaru 😊"
     }, "notfound"
+
 
 def chatbot_response(user_input):
     intents_detected = predict_class(user_input)
