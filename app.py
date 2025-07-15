@@ -7,8 +7,8 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route("/")
-def home():
-    return "Welcome to the Chatbot API!"
+def index():
+    return "GoJerowaru Chatbot API - Ready!"
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -18,18 +18,19 @@ def chat():
         if not data or "message" not in data:
             return jsonify({"error": "Field 'message' diperlukan"}), 400
 
-        msg = data["message"]
+        message = data["message"]
         context = data.get("context", None)
 
-        intents = predict_class(msg)
+        intents = predict_class(message)
         response, new_context = get_response(intents)
 
         return jsonify({
             "response": response,
             "context": new_context
         })
+
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": f"Server error: {str(e)}"}), 500
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
