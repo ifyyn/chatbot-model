@@ -14,14 +14,20 @@ def home():
 def chat():
     try:
         data = request.get_json()
+
         if not data or "message" not in data:
             return jsonify({"error": "Field 'message' diperlukan"}), 400
-        
+
         msg = data["message"]
-        intents = predict_class(msg)  
-        res = get_response(intents)  
-        return jsonify({"response": res})
-    
+        context = data.get("context", None)
+
+        intents = predict_class(msg)
+        response, new_context = get_response(intents)
+
+        return jsonify({
+            "response": response,
+            "context": new_context
+        })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

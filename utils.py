@@ -10,10 +10,12 @@ from tensorflow.keras.models import load_model
 nltk.download('punkt')
 lemmatizer = WordNetLemmatizer()
 
+# Load data
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 intents = json.load(open('intents.json'))
 model = load_model('chatbot_model.h5')
+
 ignore_chars = ['?', '!', '.', ',']
 
 def clean_text(text):
@@ -34,15 +36,26 @@ def predict_class(text):
     bow = bag_of_words(text, words)
     res = model.predict(np.array([bow]))[0]
     threshold = 0.2
-    results = [[i, r] for i, r in enumerate(res) if r > threshold]
+    results = [[i, r] for i, r in enumerate(res)]
     results.sort(key=lambda x: x[1], reverse=True)
-    return [classes[r[0]] for r in results]
+
+    if results and results[0][1] >= threshold:
+        return [{'intent': classes[results[0][0]], 'probability': str(results[0][1])}]
+    else:
+        return [{'intent': 'notfound', 'probability': '0'}]
 
 def get_response(intent_list):
-    if not intent_list:
-        return "Maaf, saya tidak mengerti pertanyaan Anda."
-    tag = intent_list[0]
+    tag = intent_list[0]['intent']
     for intent in intents['intents']:
         if intent['tag'] == tag:
-            return random.choice(intent['responses'])
-    return "Maaf, saya tidak mengerti pertanyaan Anda."
+            return random.choice(intent['responses']), tag
+    # fallback
+    return {
+        "title": "🤖 Maklum AI Baru",
+        "text": "Kata yang Anda ketik belum ada di data saya. Maklum, saya AI baru. Tapi saya masih bisa bantu soal rute, lokasi, aktivitas, harga tiket, dan fasilitas di Jerowaru 😊"
+    }, "notfound"
+
+def chatbot_response(user_input):
+    intents_detected = predict_class(user_input)
+    response, context = get_response(intents_detected)
+    return response, context
